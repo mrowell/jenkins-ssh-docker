@@ -1,6 +1,7 @@
+
 FROM jenkins/ssh-slave
 
-RUN curl -fsSLO https://get.docker.com/builds/Linux/x86_64/docker-17.04.0-ce.tgz \
-  && tar xzvf docker-17.04.0-ce.tgz \
+RUN curl -fsSLO https://download.docker.com/linux/static/stable/x86_64/docker-18.09.9.tgz \
+  && tar xzvf docker-18.09.9.tgz \
   && mv docker/docker /usr/local/bin \
-  && rm -r docker docker-17.04.0-ce.tgz
+  && rm -r docker docker-18.09.9.tgz
